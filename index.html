@@ -3,6 +3,7 @@
  <!-- Required meta tags always come first -->
 
 <head>
+    <!-- Linking the css file and the font awesome file-->
     <link rel="Stylesheet" href="css/Style.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
      <meta charset="utf-8">
@@ -18,11 +19,14 @@
 </head>
 
 <body>
+    <!--Navbar-->
 <nav class="navbar navbar-dark navbar-expand-sm bg-primary fixed-top">
     <div class="container">
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <a class="navbar-brand" href="./index.html"><img src="img/logo.png" height="40" width="41" class="img-fluid"></a>
            <div class="collapse navbar-collapse" id="Navbar">
         <ul class="navbar-nav mr-auto">
@@ -31,18 +35,19 @@
               <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span>Menu</a></li>
               <li class="nav-item"><a class="nav-link" href="contactus.html"><span class="fa fa-address-card fa-lg"></span>Contact</a></li>
             </ul>
-          
-           
+          <!--For login button with modal(or) invoking via the JQuery-->
             <span class="navbar-text"></span>
                 <a id="loginButton" data-target="#loginModal">
                 <span class="fa fa-sign-in"></span> Login</a></button>
             </span>
     </div>
 </nav>
+<!--End of navbar-->
 
+<!--Login Button modal definition-->
 <div id="loginModal" class="modal fade" role="dialog">
     <div class="modal-dialog modal-lg" role="content">
-        <!-- Modal content-->
+            <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title">Login </h4>
@@ -76,6 +81,7 @@
         </div>
     </div>
 </div>
+<!--End of Login modal-->
 
 <!-- Reserve Table Modal -->
 <div class="modal fade" id="reserveModal" tabindex="-1" aria-labelledby="reserveTableLabel" aria-hidden="true">
@@ -139,7 +145,9 @@
         </div>
     </div>
 </div>
-                
+    <!--End of Reserve table modal-->        
+
+    <!--Start of header-->
     <header class="jumbotrons">
         <div class="container">
             <div class="row">
@@ -158,11 +166,13 @@
             </div>
         </div>     
     </header>
+    <!--End of header-->
 
     <div class="row row-content">
         <div class="col">
             <div id="mycarousel" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner" role="listbox">
+
                     <div class="carousel-item active">
                         <img class="d-block img-fluid"
                             src="img/uthappizza.png" alt="Uthappizza">
@@ -223,7 +233,9 @@
     </div>
 
         <br>
+        <!--Container from Breadcrumbs to Reserve table form(Before Footer)-->
     <div class="container">
+        <!--Start of Breadcrumbs-->
         <div class="row">
             <ol class="col-12 breadcrumb">
                 <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
@@ -235,32 +247,30 @@
                <hr>
             </div>
         </div>
-
+         <!--End of Breadcrumbs-->
     
+          <!--Uthappam-->
         <div class="row row-content">
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
-            <div class="col col-sm order-sm-first col-md">
-            <div class="media">
-                <img class="d-flex mr-3 img-thumbnail align-self-center"
+                <div class="col col-sm order-sm-first col-md">
+                    <div class="media">
+                        <img class="d-flex mr-3 img-thumbnail align-self-center"
                         src="img/uthappizza.png" alt="Uthappizza">
-                <div class="media-body">
-                    
-                   
-                         <h2 class="mt-0">Uthappizza <span class="badge badge-danger">  HOT  </span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
-                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and
-                        Italian pizza, topped with Cerignola olives, ripe vine
-                        cherry tomatoes, Vidalia onion, Guntur chillies and
-                        Buffalo Paneer.</p>
+                            <div class="media-body">
+                                <h2 class="mt-0">Uthappizza <span class="badge badge-danger">  HOT  </span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
+                                <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and
+                                Italian pizza, topped with Cerignola olives, ripe vine
+                                cherry tomatoes, Vidalia onion, Guntur chillies and
+                                Buffalo Paneer.</p>
+                            </div>    
                     </div>
-                       
                 </div>
-            </div>
-            
-            
         </div>
+            <!--End of Uthappam-->
 
+        <!--For Buffet-->
         <div class="row row-content">
             <div class="col-12 col-sm-4 col-md-3">
                 <h3>This Month's Promotions</h3>
@@ -270,7 +280,7 @@
                 <div class="media">
                 
               
-                <div class="media-body">
+                    <div class="media-body">
                          <h2 class="mt-0">Week End Grand Buffet <span class="badge badge-danger">  NEW  </span></h2>
                          <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
                     </div>
@@ -279,6 +289,9 @@
                 </div>
             </div>
         </div>
+        <!--End of Buffet-->
+
+        <!--For Chef-->
         <div class="row row-content">
             <div class="col-12 col-sm-4 order-sm-last col-md-3 ">
                 <h3>Meet our Culinary Specialists</h3>
@@ -294,69 +307,74 @@
                             International experience having worked closely with
                             whos-who in the culinary world, he specializes in
                             creating mouthwatering Indo-Italian fusion experiences.
-                            </p>
+                        </p>
                     </div>
-                </div>
-                
+                </div>     
             </div>
         </div>
+        <!--End of Chef-->
+
     </div>
     <div class="row row-content justify-content-center">
         <div class="col-sm-8"> 
            <div class="card" id="reserving"> 
-            <h3 class="card-header text-white bg-warning">Reserve a Table</h3>
-            <div class="card-body">
-                <form id="reserveform">
-                    <div class="form-group row">
-                        <label for="inlineRadioOptions" class="col-md-2 col-form-label">Number of Guests</label>
-                            <div class="col-md-10">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                    <label class="form-check-label" for="inlineRadio1">1</label>
+                <h3 class="card-header text-white bg-warning">Reserve a Table</h3>
+                <div class="card-body">
+                    <form id="reserveform">
+
+                        <div class="form-group row">
+                            <label for="inlineRadioOptions" class="col-md-2 col-form-label">Number of Guests</label>
+                                <div class="col-md-10">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">1</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">2</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                        <label class="form-check-label" for="inlineRadio3">3</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                                        <label class="form-check-label" for="inlineRadio4">4</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
+                                        <label class="form-check-label" for="inlineRadio5">5</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6">
+                                        <label class="form-check-label" for="inlineRadio6">6</label>
+                                    </div>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                    <label class="form-check-label" for="inlineRadio2">2</label>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="dateandtime" class="col-12 col-md-2 col-form-label">Date and Time</label>
+                                <div class="col-6 col-md-5">
+                                    <input type="text" class="form-control" id="date" name="date" placeholder="Date">
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                                    <label class="form-check-label" for="inlineRadio3">3</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
-                                    <label class="form-check-label" for="inlineRadio4">4</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
-                                    <label class="form-check-label" for="inlineRadio5">5</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6">
-                                    <label class="form-check-label" for="inlineRadio6">6</label>
-                                </div>
+                                <div class="col-6 col-md-5">
+                                    <input type="text" class="form-control" id="time" name="time" placeholder="Time">
+                                 </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="offset-md-2 col-md-10">
+                                <button type="submit" class="btn btn-primary">Reserve</button>
                             </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="dateandtime" class="col-12 col-md-2 col-form-label">Date and Time</label>
-                        <div class="col-6 col-md-5">
-                            <input type="text" class="form-control" id="date" name="date" placeholder="Date">
                         </div>
-                        <div class="col-6 col-md-5">
-                            <input type="text" class="form-control" id="time" name="time" placeholder="Time">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="offset-md-2 col-md-10">
-                            <button type="submit" class="btn btn-primary">Reserve</button>
-                        </div>
-                    </div>
-    
-                </form>
+                    </form>
+                </div>
             </div>
-          </div>
         </div>     
     </div>
-</div>
+    
+
+<!--Start of Footer-->
     <footer class="footer">
         <div class="container">
             <div class="row">             
@@ -396,6 +414,8 @@
            </div>
         </div>
     </footer>
+    <!--End of Footer-->
+
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script><!--Priority 1-->
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script><!--Priority 2-->
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script><!--Priority 3-->
@@ -406,10 +426,10 @@
             $('[data-toggle="tooltip"]').tooltip();
         });
     </script>
-    <!--For the purpose of pause and play functionality in carousel -->
 
-    <script>
-                $("#carouselButton").click(function(){
+    <!--For the purpose of pause and play functionality in carousel -->
+        <script>
+            $("#carouselButton").click(function(){
                 if ($("#carouselButton").children("span").hasClass('fa-pause')) {
                     $("#mycarousel").carousel('pause');
                     $("#carouselButton").children("span").removeClass('fa-pause');
@@ -420,16 +440,17 @@
                     $("#carouselButton").children("span").removeClass('fa-play');
                     $("#carouselButton").children("span").addClass('fa-pause');                    
                 }
-            });
+            });      
+        </script>
 
+    <!--For invoking the login and reserve table button via the JavaScript code-->
+        <script>
             $("#loginButton").click(function(){
             $('#loginModal').modal('show')
-        });
-        $("#reserveButton").click(function(){
+            });
+            $("#reserveButton").click(function(){
             $('#reserveModal').modal('show')
-        })
-
-    </script>
+            })
+        </script>
 </body>
-
 </html>
